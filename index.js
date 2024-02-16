@@ -8,7 +8,10 @@ for (let i = 0; i < myName.length; i++) {
         count=count+1;
         console.log(count);
 
-        const countCard = document.getElementById('cart-count');
-        countCard.innerText = count;
+        changeInnerText("cart-count",count)
     });
+}
+
+function changeInnerText(id,value) {
+    document.getElementById(id).innerText =value;
 }
